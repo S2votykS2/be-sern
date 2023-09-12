@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="/post-create">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">First name</label>
+                <input type="text" class="form-control" placeholder="" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="">Last name</label>
+                <input type="text" class="form-control" placeholder="" name="lastName">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="">Address</label>
+                    <input type="text" class="form-control" name="address">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Phone number</label>
+                    <input type="text" class="form-control" name="phoneNumber">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="">Gender</label>
+                    <select name="gender" class="form-control">
+              <option value="F">Male</option>
+              <option value="M">Famale</option>
+              <option value="O">Other</option>
+            </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Position</label><br>
+                    <select name="positionId" class="form-control">
+                    <option value="P0">Bác sĩ</option>
+                    <option value="P1">Thạc sĩ</option>
+                    <option value="P2">Tiến sĩ</option>
+                    <option value="P3">Phó giáo sư</option>
+                    <option value="P4">Giáo sư</option>
+                </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Role</label><br>
+                    <select name="roleId" class="form-control">
+                    <option value="R1">Doctor</option>
+                    <option value="R2">Patient</option>
+                    <option value="R3">Admin</option>
+                </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Image</label>
+                    <input type="text" class="form-control" name="image">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+</body>
+
+</html>
